@@ -11,7 +11,6 @@
     * [字典 -> JSON](#Dict_JSON)
     * [字典数组 -> JSON](#DictArray_JSON)
 * [TIPS](#Tips) 
-* [点我下载Demo](#Demo)
 
 ---
  
@@ -157,7 +156,6 @@ enum CodingKeys: String, CodingKey {
     case books = "borrow_books"
 }
 ```
-#### <a id="Demo" href="https://github.com/chernyog/Dict2ModelDemo">点我啊</a>
 
 
 
