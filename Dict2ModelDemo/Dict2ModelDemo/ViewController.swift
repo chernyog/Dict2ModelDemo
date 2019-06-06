@@ -14,12 +14,41 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         test()
+        
+        test4dict()
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         test()
     }
 
+    func test4dict() {
+        let bookStr = """
+        {
+        "1": {
+        "id": 1,
+        "name": "《iOS从入门到放弃》",
+        "pages": 1,
+        "if": 0.5
+        },
+        "2": {
+        "id": 2,
+        "name": "《iOS从入门到放弃》",
+        "pages": 1,
+        "if": 0.5
+        },
+        "3": {
+            "id": 3,
+            "name": "《iOS从入门到放弃》",
+            "pages": 1,
+            "if": 0.5
+        }
+        }
+        """
+        let bookDict = dictionaryFrom(jsonString: bookStr)
+        print(bookDict as Any)
+    }
+    
     func test() {
         let bookStr = """
                     {
